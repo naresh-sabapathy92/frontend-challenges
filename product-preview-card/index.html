@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: '#F2EAE2',
+              gunmetal: '#1C232B',
+              'aurometal-saurus': '#6C7289',
+              'deep-aquamarine': '#3D8168',
+              'deep-aquamarine-h': '#1A4032',
+            },
+            fontFamily: {
+              sans: ['Montserrat'],
+              fraunces: ['Fraunces'],
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="flex flex-col justify-center items-center bg-cream h-screen">
+    <div
+      class="flex flex-col md:flex-row bg-white w-[21rem] md:w-[38rem] h-[38rem] md:h-[28rem] rounded-lg shadow-lg"
+    >
+      <div class="w-full md:w-1/2 h-60 md:h-full">
+        <img
+          class="rounded-t-lg md:hidden"
+          src="./images/image-product-mobile.jpg"
+        />
+        <img
+          class="w-full h-full rounded-l-lg hidden md:block"
+          src="./images/image-product-desktop.jpg"
+        />
+      </div>
+      <div
+        class="flex flex-col justify-between w-full md:w-1/2 h-96 md:h-full p-8"
+      >
+        <p class="text-aurometal-saurus font-medium text-sm tracking-[5px]">
+          PERFUME
+        </p>
+        <h1 class="font-fraunces text-3xl font-bold leading-8">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="text-aurometal-saurus text-sm leading-6">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex flex-row justify-start items-center">
+          <h1
+            class="font-fraunces text-3xl font-bold leading-8 text-deep-aquamarine mr-5"
+          >
+            $149.99
+          </h1>
+          <p class="text-aurometal-saurus text-sm line-through">$169.99</p>
+        </div>
+        <button
+          class="bg-deep-aquamarine hover:bg-deep-aquamarine-h text-white font-bold h-12 rounded-lg"
+        >
+          <div class="flex flex-row justify-center items-center">
+            <img class="h-4 w-4 mr-3" src="./images/icon-cart.svg" />
+            <p class="text-sm font-bold">
+              Add to Cart
+            </p>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+        target="_blank"
+      >
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://github.com/naresh-sabapathy92" target="_blank">
+        Resh Brown
+      </a>
+      .
+    </div>
+  </div>
+  </body>
+</html>
