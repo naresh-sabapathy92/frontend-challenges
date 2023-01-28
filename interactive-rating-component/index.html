@@ -53,51 +53,73 @@
     class="bg-very-dark-blue flex flex-col justify-center items-center h-screen w-screen"
   >
     <div
-      id="form"
-      class="bg-gradient-radial from-charleston-green to-jungle-green w-80 h-96 rounded-2xl px-6 pt-6 pb-8 grid"
+      id="rating-dialog"
+      class="bg-gradient-radial from-charleston-green to-jungle-green w-80 lg:w-[25rem] h-96 lg:h-[26rem] rounded-2xl px-6 lg:px-8 pt-6 lg:pt-8 pb-8 grid"
     >
       <div
         class="flex justify-center items-center bg-dark-blue w-10 h-10 rounded-full"
       >
         <img src="./images/icon-star.svg" alt="star" />
       </div>
-      <h1 class="text-2xl font-bold text-white">How did we do?</h1>
-      <p class="text-sm text-light-gray tracking-tight">
+      <h1 class="text-2xl lg:text-3xl font-bold text-white">How did we do?</h1>
+      <p class="text-sm lg:text-base text-light-gray tracking-tight">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
       <div class="flex justify-between">
         <span
-          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 h-10 text-medium-gray hover:text-white"
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
         >
           1
         </span>
         <span
-          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 h-10 text-medium-gray hover:text-white"
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
         >
           2
         </span>
         <span
-          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 h-10 text-medium-gray hover:text-white"
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
         >
           3
         </span>
         <span
-          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 h-10 text-medium-gray hover:text-white"
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
         >
           4
         </span>
         <span
-          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 h-10 text-medium-gray hover:text-white"
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
         >
           5
         </span>
       </div>
       <button
-        class="bg-orange hover:bg-white rounded-full text-white hover:text-orange"
+        id="submit-button"
+        class="bg-orange hover:bg-white rounded-full text-white tracking-widest hover:text-orange"
       >
         SUBMIT
       </button>
+    </div>
+    <div
+      id="submitted-dialog"
+      class="hidden flex flex-col justify-between items-center bg-gradient-radial from-charleston-green to-jungle-green w-80 h-96 rounded-2xl py-9"
+    >
+      <img
+        class="w-36 h-24"
+        src="./images/illustration-thank-you.svg"
+        alt="thank-you"
+      />
+      <!-- <div class="flex flex-col justify-center items-center"></div> -->
+      <div
+        class="flex justify-center items-center bg-dark-blue w-[10.5rem] h-8 rounded-full text-sm text-orange"
+      >
+        <p id="rating"></p>
+      </div>
+      <h1 class="text-2xl text-white">Thank you!</h1>
+      <p class="w-[17.5rem] text-sm text-light-gray text-center">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
     </div>
     <div class="text-xs text-white">
       Challenge by
