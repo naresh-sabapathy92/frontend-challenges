@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+    <style>
+      .attribution {
+        color: 'white';
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'dark-blue': '#262E38',
+              'very-dark-blue': '#131518',
+              'medium-gray': '#7C8798',
+              'light-gray': '#969FAD',
+              'charleston-green': '#232A34',
+              'jungle-green': '#181E27',
+              orange: '#FC7614',
+            },
+            fontFamily: {
+              sans: ['Overpass'],
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body
+    class="bg-very-dark-blue flex flex-col justify-center items-center h-screen w-screen"
+  >
+    <div
+      id="rating-dialog"
+      class="bg-gradient-radial from-charleston-green to-jungle-green w-80 lg:w-[25rem] h-96 lg:h-[26rem] rounded-2xl px-6 lg:px-8 pt-6 lg:pt-8 pb-8 grid"
+    >
+      <div
+        class="flex justify-center items-center bg-dark-blue w-10 h-10 rounded-full"
+      >
+        <img src="./images/icon-star.svg" alt="star" />
+      </div>
+      <h1 class="text-2xl lg:text-3xl font-bold text-white">How did we do?</h1>
+      <p class="text-sm lg:text-base text-light-gray tracking-tight">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="flex justify-between">
+        <span
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
+        >
+          1
+        </span>
+        <span
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
+        >
+          2
+        </span>
+        <span
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
+        >
+          3
+        </span>
+        <span
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
+        >
+          4
+        </span>
+        <span
+          class="flex justify-center items-center bg-dark-blue hover:bg-light-gray rounded-full w-10 lg:w-12 h-10 lg:h-12 text-medium-gray hover:text-white"
+        >
+          5
+        </span>
+      </div>
+      <button
+        id="submit-button"
+        class="bg-orange hover:bg-white rounded-full text-white tracking-widest hover:text-orange"
+      >
+        SUBMIT
+      </button>
+    </div>
+    <div
+      id="submitted-dialog"
+      class="hidden flex flex-col justify-between items-center bg-gradient-radial from-charleston-green to-jungle-green w-80 h-96 rounded-2xl py-9"
+    >
+      <img
+        class="w-36 h-24"
+        src="./images/illustration-thank-you.svg"
+        alt="thank-you"
+      />
+      <!-- <div class="flex flex-col justify-center items-center"></div> -->
+      <div
+        class="flex justify-center items-center bg-dark-blue w-[10.5rem] h-8 rounded-full text-sm text-orange"
+      >
+        <p id="rating"></p>
+      </div>
+      <h1 class="text-2xl text-white">Thank you!</h1>
+      <p class="w-[17.5rem] text-sm text-light-gray text-center">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+    <div class="text-xs text-white">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+        target="_blank"
+      >
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://github.com/naresh-sabapathy92" target="_blank">
+        Resh Brown
+      </a>
+      .
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
