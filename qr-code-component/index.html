@@ -10,7 +10,7 @@
       href="./images/favicon-32x32.png"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Frontend Mentor | QR code component</title>
@@ -30,26 +30,41 @@
         theme: {
           extend: {
             colors: {
-              'dark-blue': '#262E38',
-              'very-dark-blue': '#131518',
-              'medium-gray': '#7C8798',
-              'light-gray': '#969FAD',
-              'charleston-green': '#232A34',
-              'jungle-green': '#181E27',
-              orange: '#FC7614',
+              blue: '#2C7DFA',
+              grey: '#7D889E',
+              'blue-shade': '#3685FF',
+              'dark-navy': '#1F314F',
+              'light-grey': '#D5E1EF',
             },
             fontFamily: {
-              sans: ['Overpass'],
-            },
-            backgroundImage: {
-              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              sans: ['Outfit'],
             },
           },
         },
       }
     </script>
   </head>
-  <body>
+  <body
+    class="flex flex-col justify-center items-center h-screen w-screen bg-light-grey"
+  >
+    <div
+      class="flex flex-col items-center w-80 h-[31rem] pt-4 bg-white rounded-2xl shadow-lg"
+    >
+      <img
+        class="w-72 h-72 mb-6 rounded-lg shadow"
+        src="./images/image-qr-code.png"
+        alt="qr-code"
+      />
+      <div class="w-72 h-32 px-4">
+        <h1 class="text-xl font-semibold text-center mb-4">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="text-[15px] text-center text-grey">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
     <div class="attribution">
       Challenge by
       <a
